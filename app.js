@@ -12,7 +12,6 @@ const lusca = require('lusca');
 const dotenv = require('dotenv');
 
 const path = require('path');
-const mongoose = require('mongoose');
 const expressValidator = require('express-validator');
 const expressStatusMonitor = require('express-status-monitor');
 const sass = require('node-sass-middleware');
@@ -26,23 +25,11 @@ dotenv.load({ path: '.env.example' });
  * Controllers (route handlers).
  */
 const homeController = require('./controllers/home');
-const contactController = require('./controllers/contact');
 
 /**
  * Create Express server.
  */
 const app = express();
-
-/**
- * Connect to MongoDB.
- */
-mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI || process.env.MONGOLAB_URI);
-mongoose.connection.on('error', (err) => {
-  console.error(err);
-  console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'));
-  process.exit();
-});
 
 /**
  * Express configuration.
@@ -70,8 +57,6 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
  * Primary app routes.
  */
 app.get('/', homeController.index);
-app.get('/contact', contactController.getContact);
-app.post('/contact', contactController.postContact);
 
 /**
  * Error Handler.
