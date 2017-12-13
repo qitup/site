@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Appster - Free Bootstrap 4 App Template</title>
-        <meta name="description" content="Love appster." />
+        <title>QueueItUp - Free Music Queueing App</title>
+        <meta name="description" content="QueueItUp." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Bootstrap 4-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="css/style.css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+        <link rel="shortcut icon" href="/img/favicon.ico" />
     </head>
     <body>
         <!--header-->
@@ -19,14 +21,11 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><strong>APPSTER</strong></a>
+            <a class="navbar-brand" href="#"><strong>QueueItUp</strong></a>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-3">
                         <a class="nav-link page-scroll" href="#features">Features <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link page-scroll" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item mr-3">
                         <a class="nav-link page-scroll" href="#download">Download</a>
@@ -42,25 +41,22 @@
         </nav>
 
         <!--main section-->
-        <section class="bg-texture hero pt-5">
+        <section class="bg-texture hero pt-5" style="background-image: url(img/vinyl.jpeg); background-size: cover">
             <div class="container">
                 <div class="row d-sm-flex">
                     <div class="col-sm-6 text-white wow fadeIn">
                         <div class="mt-5 pt-5 hidden-sm-down"></div>
-                        <h1>Appster</h1>
-                        <h2>A beautiful <span class="text-orange">screen capturing</span> app that you 
-                        can trust on</h2>
+                        <h1 class="main-title">QueueItUp</h1>
+                        <h2>A beautiful <span class="text-orange">music queueing</span> app that is as easy to use as it is on the eyes</h2>
                         <p class="mt-4 lead">
-                            Appster is a free Bootstrap 4 app landing page designed by Wired Dots and released under 
-                            the Creative Commons 4.0.
+                            QueueItUp is an android application that can be used at your next party for queueing music on the host's device. (Spotify Premium needed)
                         </p>
                         <p class="mt-5">
                             <a href="#" class="mr-2"><img src="img/google-play.png" class="store-img"/></a>
-                            <a href="#"><img src="img/apple_store.png" class="store-img"/> </a>
                         </p>
                     </div>
                     <div class="col-sm-6 pt-5 hidden-sm-down wow fadeInRight">
-                        <img class="img-fluid mx-auto d-block" src="img/shot-3.png"/>
+                        <img class="img-fluid mx-auto d-block landing-image" src="img/queue-page.png"/>
                     </div>
                 </div>
             </div>
@@ -71,9 +67,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
-                        <h2 class="text-primary">Why Choose Appster?</h2>
+                        <h2 class="text-primary">Why Choose QueueItUp?</h2>
                         <p class="lead">
-                            Appster is more than just a screen capturing app.
+                            QueueItUp is the easiest way to show everyone your inner DJ.
                         </p>
                     </div>
                 </div>
@@ -81,36 +77,36 @@
                     <div class="col-sm-3 mt-2">
                         <div class="card border-none wow fadeIn">
                             <div class="card-block">
-                                <i class="material-icons dp36 icon-box">camera_enhance</i>
-                                <h5 class="card-title text-primary pt-5">Capture Anytime</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                <i class="fas fa-plus-circle fa-5x icon-box"></i>
+                                <h5 class="card-title text-primary pt-5">Create Party</h5>
+                                <p class="card-text">To create a party, simply give it a name and a password which your users will use to join.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3 mt-2">
                         <div class="card border-none wow fadeIn">
                             <div class="card-block">
-                                <i class="material-icons dp36 icon-box">crop</i>
-                                <h5 class="card-title text-primary pt-5">Unlimited Crops</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                <i class="fas fa-users fa-5x fa-fw icon-box" style="width: 1em"></i>
+                                <h5 class="card-title text-primary pt-5">Get your friends to join!</h5>
+                                <p class="card-text">Tell your friends the password and get the party rolling. </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3 mt-2">
                         <div class="card border-none wow fadeIn">
                             <div class="card-block">
-                                <i class="material-icons dp36 icon-box">cloud_upload</i>
-                                <h5 class="card-title text-primary pt-5">Upload at Cloud</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                <i class="fab fa-spotify fa-5x icon-box"></i>
+                                <h5 class="card-title text-primary pt-5">Connects directly to Spotify. </h5>
+                                <p class="card-text">Playing the music off your laptop? No problem. QueueItUp works with Spotify Connect which allows you to queue music for any device.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3 mt-2">
                         <div class="card border-none wow fadeIn">
                             <div class="card-block">
-                                <i class="material-icons dp36 icon-box">invert_colors</i>
+                                <i class="fas fa-paint-brush fa-5x icon-box"></i>
                                 <h5 class="card-title text-primary pt-5">Beautiful Design</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                <p class="card-text">Simple, straight-to-the-point design makes it easier than ever to make your next party the most democratic ever. </p>
                             </div>
                         </div>
                     </div>
@@ -123,7 +119,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
-                        <h2 class="text-orange">Features & Details</h2>
+                        <h2 class="text-orange">Screenshots</h2>
                         <p class="lead">
                             Built for creative people. Made for high performance.
                         </p>
@@ -131,87 +127,25 @@
                 </div>
                 <div class="row d-md-flex mt-5">
                     <div class="col-sm-4 wow fadeIn">
-                        <h5 class="text-orange">Great Support</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <h5 class="text-orange pt-5">Clean Code</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <h5 class="text-orange pt-5">Unique Design</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    </div>
-                    <div class="col-sm-4 wow fadeIn">
-                        <img class="img-fluid mx-auto d-block pb-3" src="img/shot-3.png" alt="Gallery">
-                    </div>
-                    <div class="col-sm-4 wow fadeIn">
-                        <h5 class="text-orange">Unlimited Features</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <h5 class="text-orange pt-5">High Resolution</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <h5 class="text-orange pt-5">Modern Design</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--pricing-->
-        <section class="bg-alt" id="pricing">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center">
-                        <h2 class="text-primary">Pricing</h2>
-                        <p class="lead">
-                            Our no-nonsense pricing.
+                        <h5 class="text-orange pt-5 text-details">Login</h5>
+                        <p class="lead text-details">
+                            Using either Spotify or QueueItUp account.
                         </p>
+                        <img class="img-fluid mx-auto d-block pb-3 img-shots" src="img/login-page.png" alt="Gallery">
                     </div>
-                </div>
-                <div class="row d-md-flex mt-4 text-center">
-                    <div class="col-sm-4 mt-2 wow fadeIn">
-                        <div class="card card-outline-primary">
-                            <div class="card-block">
-                                <h5 class="card-title pt-4 text-orange">Basic</h5>
-                                <h3 class="card-title text-primary pt-4">FREE</h3>
-                                <p class="card-text text-muted pb-3 border-bottom">per month</p>
-                                <ul class="list-unstyled pricing-list">
-                                    <li>Free setup</li>
-                                    <li>100MB storage</li>
-                                    <li>1GB bandwidth</li>
-                                    <li>Basic support</li>
-                                </ul>
-                                <a href="#" class="btn btn-primary btn-radius">Order Now</a>
-                            </div>
-                        </div>
+                    <div class="col-sm-4 wow fadeIn">
+                        <h5 class="text-orange pt-5 text-details">Search</h5>
+                        <p class="lead text-details">
+                            For tracks, artists or albums
+                        </p>
+                        <img class="img-fluid mx-auto d-block pb-3 img-shots" src="img/search-page.png" alt="Gallery">
                     </div>
-                    <div class="col-sm-4 mt-2 wow fadeIn">
-                        <div class="card card-outline-primary bg-primary text-white">
-                            <div class="card-block">
-                                <h5 class="card-title pt-4 text-white">Standard</h5>
-                                <h3 class="card-title text-orange pt-4"><sup>$</sup> 9.99</h3>
-                                <p class="card-text text-muted pb-3 border-bottom">per month</p>
-                                <ul class="list-unstyled pricing-list">
-                                    <li>Free setup</li>
-                                    <li>5GB storage</li>
-                                    <li>Unlimited bandwidth</li>
-                                    <li>Priority support</li>
-                                </ul>
-                                <a href="#" class="btn btn-white btn-radius">Order Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mt-2 wow fadeIn">
-                        <div class="card card-outline-primary">
-                            <div class="card-block">
-                                <h5 class="card-title pt-4 text-orange">Advanced</h5>
-                                <h3 class="card-title text-primary pt-4"><sup>$</sup> 19.99</h3>
-                                <p class="card-text text-muted pb-3 border-bottom">per month</p>
-                                <ul class="list-unstyled pricing-list">
-                                    <li>Free setup</li>
-                                    <li>Unlimited storage</li>
-                                    <li>Unlimited bandwidth</li>
-                                    <li>24/7 support</li>
-                                </ul>
-                                <a href="#" class="btn btn-primary btn-radius">Order Now</a>
-                            </div>
-                        </div>
+                    <div class="col-sm-4 wow fadeIn">
+                        <h5 class="text-orange pt-5 text-details">Party Management</h5>
+                        <p class="lead text-details">
+                            Easily create or join a party
+                        </p>
+                        <img class="img-fluid mx-auto d-block pb-3 img-shots" src="img/party-page.png" alt="Gallery">
                     </div>
                 </div>
             </div>
@@ -223,13 +157,8 @@
                 <div class="row d-md-flex text-center wow fadeIn">
                     <div class="col-md-6 offset-md-3 col-sm-10 offset-sm-1 col-xs-12">
                         <h2 class="text-primary">Download & get started today!</h2>
-                        <p class="mt-4 lead">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet.
-                        </p>
                         <p class="mt-5">
                             <a href="#" class="mr-2"><img src="img/google-play.png" class="store-img"/></a>
-                            <a href="#"><img src="img/apple_store.png" class="store-img"/> </a>
                         </p>
                     </div>
                 </div>
@@ -243,35 +172,37 @@
                     <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center">
                         <h2 class="text-primary">Our Team</h2>
                         <p class="lead">
-                            We're a team of three people.
+                            We're a team of two people.
                         </p>
                     </div>
                 </div>
                 <div class="row d-md-flex mt-4 text-center">
-                    <div class="col-sm-4 mt-2 wow fadeIn">
+                    <div class="col-sm-6 mt-2 wow fadeIn">
                         <div class="card border-none">
                             <div class="card-block">
-                                <img src="img/team-1.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
-                                <h5 class="card-title text-primary pt-4">John Deo</h5>
-                                <p class="card-text">App Designer</p>
+                                <img src="img/team-1.png" alt="Male" class="img-team img-fluid rounded-circle"/>
+                                <p class="mt-4">
+                                    <a href="https://www.linkedin.com/in/ryan-schott" target="_blank"><em class="ion-social-linkedin text-linkedin-alt icon-sm"></em></a>
+                                    <a href="https://github.com/Ry95" target="_blank"><em class="ion-social-github text-facebook-alt icon-sm mr-3"></em></a>
+
+                                </p>
+                                <h5 class="card-title text-primary">Ryan Schott</h5>
+                                <p class="card-text">Developer</p>
+
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 mt-2 wow fadeIn">
+                    <div class="col-sm-6 mt-2 wow fadeIn">
                         <div class="card border-none">
                             <div class="card-block">
                                 <img src="img/team-2.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
-                                <h5 class="card-title text-primary pt-4">Brandon Lee</h5>
-                                <p class="card-text">Ionic Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mt-2 wow fadeIn">
-                        <div class="card border-none">
-                            <div class="card-block">
-                                <img src="img/team-3.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
-                                <h5 class="card-title text-primary pt-4">Inza Fererri</h5>
-                                <p class="card-text">Android Developer</p>
+                                <p class="mt-4">
+                                    <a href="https://www.linkedin.com/in/trevor-foster" target="_blank"><em class="ion-social-linkedin text-linkedin-alt icon-sm"></em></a>
+                                    <a href="https://github.com/terev" target="_blank"><em class="ion-social-github text-facebook-alt icon-sm mr-3"></em></a>
+                                </p>
+                                <h5 class="card-title text-primary">Trevor Foster</h5>
+                                <p class="card-text">Developer </p>
+
                             </div>
                         </div>
                     </div>
@@ -283,17 +214,13 @@
         <section class="bg-texture-collage p-0" id="contact">
             <div class="container">
                 <div class="row d-md-flex text-white text-center wow fadeIn">
-                    <div class="col-sm-4 p-5">
-                        <p><em class="material-icons dp36">phone</em></p>
-                        <p class="lead">+49 5456 87595</p>
-                    </div>
-                    <div class="col-sm-4 p-5">
+                    <div class="col-sm-6 p-5">
                         <p><em class="material-icons dp36">email</em></p>
-                        <p class="lead">appster.support@gmail.com</p>
+                        <p class="lead">support@gmail.com</p>
                     </div>
-                    <div class="col-sm-4 p-5">
+                    <div class="col-sm-6 p-5">
                         <p><em class="material-icons dp36">location_on</em></p>
-                        <p class="lead">Berlin, Germany</p>
+                        <p class="lead">Guelph, Canada</p>
                     </div>
                 </div>
             </div>

@@ -28,17 +28,24 @@ h1,h2,h3,h4,h5,h6{
 .navbar{
     min-height: 80px;
 }
+.landing-image{
+    height: 40% !important;
+}
+
 .navbar-nav .nav-item .nav-link{
     font-weight: 600;
     font-size: 16px;
     color: #fff;
 }
 .navbar .nav-item .active, .navbar .nav-link:hover, .navbar .navbar-brand:hover{
-    color: #ffb300 !important;
+    color: #3F51B5 !important;
 }
 .hero{
     height: 100vh;
     min-height: 600px;
+}
+.main-title{
+    color: #ffb300;
 }
 .hero h1{
     margin-bottom: 30px;
@@ -53,14 +60,14 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom: 10px;
 }  
 a {
-    color: #512DA8;
+    color: #3F51B5;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
 a:hover,
 a:focus {
-    color: #512DA8;
+    color: #3F51B5;
     outline: 0;
     text-decoration: none;
 }
@@ -78,7 +85,7 @@ section{
     width: 120px;
 }
 .card-outline-primary{
-    border: solid 1px #512DA8;
+    border: solid 1px #3F51B5;
 }
 .sticky-navigation{
     top: -100px;
@@ -87,22 +94,22 @@ section{
 * Background Colors
 ================================================*/
 .bg-texture{
-    background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%);
-    background:-moz-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%);
-    background:linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%);
+    background:-webkit-linear-gradient(-90deg, #ffb300 33%, transparent 0%),
+        linear-gradient(-90deg, #3F51B5 100%, transparent 33%);
+    background:-moz-linear-gradient(-90deg, #ffb300 33%, transparent 0%),
+        linear-gradient(-90deg, #3F51B5 100%, transparent 33%);
+    background:linear-gradient(-90deg, #ffb300 33%, transparent 0%),
+        linear-gradient(-90deg, #3F51B5 100%, transparent 33%);
 }
 .bg-texture-collage{
-    background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 67%, transparent 33%),
+    background:-webkit-linear-gradient(-45deg, #ffb300 25%, transparent 0%),
+        linear-gradient(-45deg, #3F51B5 75%, transparent 33%),
         linear-gradient(-45deg, #ffb300 100%, transparent 67%);
-    background:-moz-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 67%, transparent 33%),
+    background:-moz-linear-gradient(-45deg, #ffb300 25%, transparent 0%),
+        linear-gradient(-45deg, #3F51B5 75%, transparent 33%),
         linear-gradient(-45deg, #ffb300 100%, transparent 67%);
-    background:linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 67%, transparent 33%),
+    background:linear-gradient(-45deg, #ffb300 25%, transparent 0%),
+        linear-gradient(-45deg, #3F51B5 75%, transparent 33%),
         linear-gradient(-45deg, #ffb300 100%, transparent 67%);
 }
 .bg-alt {
@@ -115,7 +122,7 @@ section{
     background-color: #F9F9FA;
 }
 .bg-primary{
-    background-color: #512DA8 !important;
+    background-color: #3F51B5 !important;
 }
 .bg-orange{
     background-color: #ffb300;
@@ -140,7 +147,7 @@ section{
     text-decoration:none;
 }
 .text-primary {
-    color: #512DA8 !important;
+    color: #3F51B5 !important;
 }
 .text-orange{
     color: #ffb300 !important;
@@ -168,11 +175,17 @@ section{
   height: 48px;
   vertical-align: middle;
 }
+.text-details{
+    text-align: center;
+}
+.img-shots{
+    height: 32em !important;
+}
 .icon-box{
     color:#fff;
-    background-color: #512DA8;
+    background-color: #3F51B5;
     vertical-align: middle;
-    border-radius: 50px !important;
+    border-radius: 50% !important;
     padding:20px;
     display: inline;
 }
@@ -194,7 +207,7 @@ section{
     background: rgba(255, 255, 255, 0.2) !important;
 }
 .btn-white {
-    color: #512DA8;
+    color: #3F51B5;
     background-color: #fff;
     border-color: #fff;
 }
@@ -203,8 +216,8 @@ section{
     color: #fff !important;
 }
 .btn-primary{
-    background-color: #512DA8 !important;
-    border-color: #512DA8 !important;
+    background-color: #3F51B5 !important;
+    border-color: #3F51B5 !important;
 }
 .btn-radius{
     border-radius: 50px;
