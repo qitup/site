@@ -11,6 +11,9 @@ services:
     volumes:
      - .:/site
      - /site/node_modules
+
+    networks:
+      - proxy
     
     labels:
       - traefik.enable=true
@@ -19,3 +22,7 @@ services:
       - traefik.frontend.passHostHeader=true
       - traefik.docker.network=proxy
       - traefik.port=3000
+
+networks:
+  proxy:
+    external: true
