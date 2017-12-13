@@ -1,14 +1,13 @@
-FROM node:6-slim
+FROM node:8.9.3-alpine
 
 COPY . /starter
 COPY package.json /starter/package.json
-COPY .env.example /starter/.env.example
 
 WORKDIR /starter
 
 ENV NODE_ENV production
-RUN npm install --production
+RUN yarn install --production
 
-CMD ["npm","start"]
+CMD ["yarn","start"]
 
-EXPOSE 8888
+EXPOSE 3000
