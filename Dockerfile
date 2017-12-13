@@ -1,9 +1,9 @@
 FROM node:8.9.3-alpine
 
-COPY . /starter
-COPY package.json /starter/package.json
+COPY . /site
+COPY package.json /site/package.json
 
-WORKDIR /starter
+WORKDIR /site
 
 ENV NODE_ENV production
 RUN yarn install --production

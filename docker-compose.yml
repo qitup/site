@@ -1,14 +1,16 @@
 version: '3'
 services:
-  web:
-    build: .
+  site:
+    image: qitup_site:latest
+    build:
+        context: ../site
     ports:
      - "3000:3000"
     environment:
      - PORT=3000
     volumes:
-     - .:/starter
-     - /starter/node_modules
+     - .:/site
+     - /site/node_modules
     
     labels:
       - traefik.enable=true
