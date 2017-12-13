@@ -9,4 +9,11 @@ services:
     volumes:
      - .:/starter
      - /starter/node_modules
-     
+    
+    labels:
+      - traefik.enable=true
+      - traefik.backend=site
+      - traefik.frontend.rule=Host:qitup.ca
+      - traefik.frontend.passHostHeader=true
+      - traefik.docker.network=proxy
+      - traefik.port=3000
