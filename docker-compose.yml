@@ -3,7 +3,7 @@ services:
   site:
     image: qitup_site:latest
     build:
-        context: ../site
+        context: .
     ports:
      - "3000:3000"
     environment:
